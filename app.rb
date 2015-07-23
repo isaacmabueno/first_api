@@ -1,4 +1,4 @@
-require 'Bundler'
+require 'bundler'
 Bundler.require() #you need to state the bundler.require here and it doesn't need ()
 
 #how to make a router or a controller in 3 lines of code
@@ -11,6 +11,7 @@ end
 #http://localhost/api/awesome/
 get'/api/awesome' do
   #do something else
+  {:riotfest => 'Thrice is playing Riot Fest', :thrice => 'It\'s going to be sick!'}.to_json
 end
 
 
